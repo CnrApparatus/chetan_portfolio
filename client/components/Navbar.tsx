@@ -39,8 +39,8 @@ export function Navbar() {
               const Icon = item.icon;
               const isActive =
                 location.pathname === item.path && item.path !== "/";
-              const isHovered = hoveredItem === item.path;
-              const isPressed = pressedItem === item.path;
+              const isHovered = hoveredItem === (item.section || item.path);
+              const isPressed = pressedItem === (item.section || item.path);
 
               return (
                 <Link
