@@ -247,34 +247,37 @@ export default function Index() {
       </section>
 
       {/* Blog Section */}
-      <section className="py-20 px-8">
+      <section
+        id="blog"
+        className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-black mb-4">
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4">
               Latest Insights
             </h2>
-            <p className="text-rich-gray">
+            <p className="text-rich-gray text-base sm:text-lg">
               Trending topics in business analytics
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {blogPosts.map((post, index) => (
               <article
                 key={index}
-                className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
+                className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
               >
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between text-sm text-rich-gray">
+                  <div className="flex items-center justify-between text-xs sm:text-sm text-rich-gray">
                     <span>{post.date}</span>
                     <span>{post.readTime}</span>
                   </div>
 
-                  <h3 className="text-xl font-medium text-black group-hover:text-rich-gray transition-colors duration-200">
+                  <h3 className="text-lg sm:text-xl font-medium text-black group-hover:text-rich-gray transition-colors duration-200 leading-tight">
                     {post.title}
                   </h3>
 
-                  <p className="text-rich-gray leading-relaxed">
+                  <p className="text-sm sm:text-base text-rich-gray leading-relaxed">
                     {post.excerpt}
                   </p>
 
@@ -290,16 +293,19 @@ export default function Index() {
       </section>
 
       {/* Contact & About Section */}
-      <section className="py-20 px-8 bg-gray-50">
+      <section
+        id="contact"
+        className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* About Section */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div>
-                <h2 className="text-4xl font-light text-black mb-6">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 sm:mb-6">
                   About Me
                 </h2>
-                <div className="space-y-4 text-rich-gray leading-relaxed">
+                <div className="space-y-4 text-rich-gray leading-relaxed text-sm sm:text-base">
                   <p>
                     I'm a passionate Business & Data Analyst with a focus on
                     transforming complex data into actionable business insights.
@@ -322,19 +328,19 @@ export default function Index() {
             </div>
 
             {/* Contact Section */}
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-medium text-black mb-6">
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200">
+              <h3 className="text-xl sm:text-2xl font-medium text-black mb-4 sm:mb-6">
                 Let's Connect
               </h3>
 
-              <form className="space-y-6">
+              <form className="space-y-4 sm:space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-rich-gray mb-2">
                     Name
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
                     placeholder="Your name"
                   />
                 </div>
@@ -345,7 +351,7 @@ export default function Index() {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -356,12 +362,12 @@ export default function Index() {
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 resize-none"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 resize-none text-sm sm:text-base"
                     placeholder="Tell me about your project..."
                   />
                 </div>
 
-                <button className="w-full bg-black text-white py-3 rounded-lg hover:bg-rich-gray transition-colors duration-200">
+                <button className="w-full bg-black text-white py-2 sm:py-3 rounded-lg hover:bg-rich-gray transition-colors duration-200 text-sm sm:text-base">
                   Send Message
                 </button>
               </form>
