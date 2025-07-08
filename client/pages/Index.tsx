@@ -121,16 +121,16 @@ export default function Index() {
                 </button>
 
                 <div className="flex items-center space-x-3">
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
                     <Github size={18} />
                   </button>
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
                     <Linkedin size={18} />
                   </button>
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
                     <Mail size={18} />
                   </button>
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
                     <ExternalLink size={18} />
                   </button>
                 </div>
@@ -138,7 +138,7 @@ export default function Index() {
             </div>
 
             <div className="flex justify-center lg:justify-end">
-              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-black">
+              <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden border-4 border-black">
                 <img
                   src="https://cdn.builder.io/api/v1/assets/998a06dbc76e4e3a8e4610c963409912/profile-white-photoroom-ed208b?format=webp&width=800"
                   alt="Chetan Rajeshirke"
