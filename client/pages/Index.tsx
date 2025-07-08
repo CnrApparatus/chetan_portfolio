@@ -206,8 +206,8 @@ export default function Index() {
         id="skills"
         className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
       >
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {skills.map((skill, index) => (
               <div
                 key={skill.id}
