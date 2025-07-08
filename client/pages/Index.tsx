@@ -1,5 +1,15 @@
 import { useState } from "react";
-import { Download, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import {
+  Download,
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  TrendingUp,
+  BarChart3,
+  PieChart,
+  LineChart,
+} from "lucide-react";
 
 export default function Index() {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
@@ -30,6 +40,29 @@ export default function Index() {
     },
   ];
 
+  const projects = [
+    {
+      category: "Finance & Market Analysis",
+      icon: TrendingUp,
+      items: [
+        "Market Trend Analysis Dashboard",
+        "Financial Performance Tracking",
+        "Investment Portfolio Analytics",
+        "Risk Assessment Models",
+      ],
+    },
+    {
+      category: "Marketing & Sales Analysis",
+      icon: BarChart3,
+      items: [
+        "Customer Behavior Analytics",
+        "Sales Performance Dashboard",
+        "Campaign ROI Analysis",
+        "Lead Generation Tracking",
+      ],
+    },
+  ];
+
   const blogPosts = [
     {
       title: "The Future of Business Intelligence in Small Enterprises",
@@ -56,15 +89,18 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-warm-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
+      <section
+        id="hero"
+        className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8"
+      >
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
               <div className="space-y-2">
-                <p className="text-sm text-rich-gray uppercase tracking-wider">
+                <p className="text-xs sm:text-sm text-rich-gray uppercase tracking-wider">
                   Business & Data Analyst
                 </p>
-                <h1 className="text-6xl lg:text-7xl font-light text-rich-gray leading-tight">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight">
                   Hello I'm
                   <br />
                   <span className="text-black font-normal">
@@ -73,36 +109,36 @@ export default function Index() {
                 </h1>
               </div>
 
-              <p className="text-lg text-rich-gray max-w-lg leading-relaxed">
+              <p className="text-base sm:text-lg text-rich-gray max-w-lg leading-relaxed mx-auto lg:mx-0">
                 "I turn raw data into clear, actionable insights – with clean
                 dashboards and a curious mind."
               </p>
 
-              <div className="flex items-center space-x-4">
-                <button className="flex items-center space-x-2 bg-black text-white px-6 py-3 rounded-full hover:scale-105 transition-transform duration-200">
+              <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
+                <button className="flex items-center space-x-2 bg-black text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform duration-200 text-sm sm:text-base">
                   <Download size={16} />
                   <span>Download CV</span>
                 </button>
 
                 <div className="flex items-center space-x-3">
-                  <button className="p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
-                    <Github size={20} />
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                    <Github size={18} />
                   </button>
-                  <button className="p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
-                    <Linkedin size={20} />
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                    <Linkedin size={18} />
                   </button>
-                  <button className="p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
-                    <Mail size={20} />
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                    <Mail size={18} />
                   </button>
-                  <button className="p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
-                    <ExternalLink size={20} />
+                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-rich-gray hover:text-white transition-colors duration-200">
+                    <ExternalLink size={18} />
                   </button>
                 </div>
               </div>
             </div>
 
             <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-black">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-black">
                 <img
                   src="https://cdn.builder.io/api/v1/assets/998a06dbc76e4e3a8e4610c963409912/profile-white-photoroom-ed208b?format=webp&width=800"
                   alt="Chetan Rajeshirke"
@@ -115,84 +151,72 @@ export default function Index() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-8">
+      <section
+        id="projects"
+        className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="relative">
-            {/* Triangle shapes container */}
-            <div className="flex items-center justify-center space-x-8">
-              {/* Left Triangle */}
-              <div className="relative">
-                <svg
-                  width="400"
-                  height="250"
-                  viewBox="0 0 400 250"
-                  className="border-2 border-black rounded-2xl bg-white"
-                >
-                  <path
-                    d="M 50 200 L 350 50 L 350 200 Z"
-                    fill="none"
-                    stroke="black"
-                    strokeWidth="2"
-                  />
-                  <text x="70" y="180" className="fill-black text-sm font-mono">
-                    <tspan x="70" dy="0">
-                      Finance
-                    </tspan>
-                    <tspan x="70" dy="15">
-                      &
-                    </tspan>
-                    <tspan x="70" dy="15">
-                      Market Analysis
-                    </tspan>
-                  </text>
-                </svg>
-              </div>
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4">
+              Project Categories
+            </h2>
+            <p className="text-rich-gray text-base sm:text-lg">
+              Specialized analytics solutions for different business needs
+            </p>
+          </div>
 
-              {/* Right Triangle */}
-              <div className="relative">
-                <svg
-                  width="400"
-                  height="250"
-                  viewBox="0 0 400 250"
-                  className="border-2 border-black rounded-2xl bg-white"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {projects.map((project, index) => {
+              const Icon = project.icon;
+              return (
+                <div
+                  key={index}
+                  className="group relative bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-gray-200 hover:border-black transition-all duration-300 hover:shadow-xl"
                 >
-                  <path
-                    d="M 50 50 L 50 200 L 350 200 Z"
-                    fill="none"
-                    stroke="black"
-                    strokeWidth="2"
-                  />
-                  <text x="280" y="80" className="fill-black text-sm font-mono">
-                    <tspan x="280" dy="0">
-                      Marketing
-                    </tspan>
-                    <tspan x="280" dy="15">
-                      &
-                    </tspan>
-                    <tspan x="280" dy="15">
-                      Sales Analysis
-                    </tspan>
-                  </text>
-                </svg>
-              </div>
-            </div>
+                  <div className="absolute top-6 right-6 text-rich-gray group-hover:text-black transition-colors duration-300">
+                    <Icon size={32} />
+                  </div>
+
+                  <div className="space-y-6">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-medium text-black pr-12">
+                      {project.category}
+                    </h3>
+
+                    <div className="space-y-3">
+                      {project.items.map((item, itemIndex) => (
+                        <div
+                          key={itemIndex}
+                          className="flex items-center space-x-3 text-rich-gray group-hover:text-black transition-colors duration-300"
+                        >
+                          <div className="w-2 h-2 bg-rich-gray rounded-full group-hover:bg-black transition-colors duration-300"></div>
+                          <span className="text-sm sm:text-base">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-8">
+      <section
+        id="skills"
+        className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {skills.map((skill, index) => (
               <div
                 key={skill.id}
-                className={`relative p-8 border-2 border-dashed transition-all duration-300 cursor-pointer ${
+                className={`relative p-6 sm:p-8 transition-all duration-300 cursor-pointer rounded-2xl ${
                   pressedSkill === index
-                    ? "border-black bg-black text-white scale-95"
+                    ? "bg-black text-white scale-95"
                     : hoveredSkill === index
-                      ? "border-black bg-gray-50 scale-105"
-                      : "border-rich-gray hover:border-black"
+                      ? "bg-gray-50 scale-105"
+                      : "bg-white hover:bg-gray-50"
                 }`}
                 onMouseEnter={() => setHoveredSkill(index)}
                 onMouseLeave={() => setHoveredSkill(null)}
@@ -201,12 +225,12 @@ export default function Index() {
               >
                 <div className="space-y-4">
                   <div
-                    className={`text-4xl font-light ${pressedSkill === index ? "text-white" : "text-rich-gray"}`}
+                    className={`text-3xl sm:text-4xl font-light ${pressedSkill === index ? "text-white" : "text-rich-gray"}`}
                   >
                     {skill.id}
                   </div>
                   <h3
-                    className={`text-xl font-medium leading-tight ${pressedSkill === index ? "text-white" : "text-black"}`}
+                    className={`text-lg sm:text-xl font-medium leading-tight ${pressedSkill === index ? "text-white" : "text-black"}`}
                   >
                     {skill.title}
                   </h3>
