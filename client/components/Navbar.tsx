@@ -44,12 +44,12 @@ export function Navbar() {
 
               return (
                 <Link
-                  key={item.path}
+                  key={item.section || item.path}
                   to={item.path}
                   onClick={() => handleClick(item)}
-                  onMouseEnter={() => setHoveredItem(item.path)}
+                  onMouseEnter={() => setHoveredItem(item.section || item.path)}
                   onMouseLeave={() => setHoveredItem(null)}
-                  onMouseDown={() => setPressedItem(item.path)}
+                  onMouseDown={() => setPressedItem(item.section || item.path)}
                   onMouseUp={() => setPressedItem(null)}
                   className={`flex items-center justify-center rounded-full text-sm font-medium transition-all duration-300 w-11 h-11 ${
                     isActive
