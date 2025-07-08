@@ -51,31 +51,17 @@ export function Navbar() {
                   onMouseLeave={() => setHoveredItem(null)}
                   onMouseDown={() => setPressedItem(item.path)}
                   onMouseUp={() => setPressedItem(null)}
-                  className={`flex items-center overflow-hidden rounded-full text-sm font-medium transition-all duration-300 ${
+                  className={`flex items-center justify-center rounded-full text-sm font-medium transition-all duration-300 w-11 h-11 ${
                     isActive
-                      ? "bg-black text-white px-4 sm:px-6 py-2 sm:py-3"
+                      ? "bg-black text-white"
                       : isPressed
-                        ? "bg-rich-gray text-white px-4 sm:px-6 py-2 sm:py-3 scale-95"
+                        ? "bg-rich-gray text-white scale-95"
                         : isHovered
-                          ? "bg-black text-white px-4 sm:px-6 py-2 sm:py-3 scale-105"
-                          : "bg-rich-gray text-white p-2 sm:p-3 hover:scale-105"
+                          ? "bg-black text-white scale-105"
+                          : "bg-rich-gray text-white hover:scale-105"
                   }`}
-                  style={{
-                    width: isHovered || isPressed || isActive ? "auto" : "44px",
-                    minWidth:
-                      isHovered || isPressed || isActive ? "auto" : "44px",
-                  }}
                 >
-                  <Icon size={16} className="flex-shrink-0" />
-                  <span
-                    className={`ml-2 whitespace-nowrap transition-all duration-300 ${
-                      isHovered || isPressed || isActive
-                        ? "opacity-100 max-w-20"
-                        : "opacity-0 max-w-0 ml-0"
-                    }`}
-                  >
-                    {item.label}
-                  </span>
+                  <Icon size={16} />
                 </Link>
               );
             })}
