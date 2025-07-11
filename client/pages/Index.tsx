@@ -97,12 +97,13 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
               <div className="space-y-2">
-                <p className="text-xs sm:text-sm text-rich-gray uppercase tracking-wider">
-                  Business & Data Analyst
+                <p className="text-[15px] text-rich-gray uppercase tracking-wider ml-1">
+                  <h3>Business & Data Analyst</h3>
+                  <h1></h1>
                 </p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight flex flex-col gap-5">
                   <span>Hello I'm</span>
-                  <span className="text-black font-normal mt-1">
+                  <span className="text-black font-normal mt-0.5">
                     Chetan Rajeshirke
                   </span>
                 </h1>
