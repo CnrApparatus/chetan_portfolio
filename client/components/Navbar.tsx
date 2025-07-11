@@ -30,9 +30,9 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/80 backdrop-blur-md border-b border-black/10">
-      <div className="max-w-7xl mx-auto px-5 sm:px-10 py-5 sm:py-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl sm:text-2xl font-bold text-black">
+          <div className="text-2xl sm:text-3xl font-bold text-black">
             Cnr<span className="text-rich-gray">.</span>
           </div>
 
