@@ -176,18 +176,18 @@ export default function Index() {
                   <span>Download CV</span>
                 </button>
 
-                <div className="flex items-center space-x-3">
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
-                    <Github size={18} />
+                <div className="flex items-center space-x-4">
+                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                    <Github size={20} />
                   </button>
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
-                    <Linkedin size={18} />
+                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                    <Linkedin size={20} />
                   </button>
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
-                    <Mail size={18} />
+                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                    <Mail size={20} />
                   </button>
-                  <button className="p-2 sm:p-3 rounded-full border border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
-                    <ExternalLink size={18} />
+                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                    <ExternalLink size={20} />
                   </button>
                 </div>
               </div>
