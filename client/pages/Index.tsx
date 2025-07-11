@@ -103,7 +103,7 @@ export default function Index() {
                 </p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight flex flex-col gap-5">
                   <span>Hello I'm</span>
-                  <span className="text-black font-normal mt-0.5">
+                  <span className="text-black font-normal mt-px">
                     Chetan Rajeshirke
                   </span>
                 </h1>
