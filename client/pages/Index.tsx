@@ -262,7 +262,7 @@ export default function Index() {
       {/* Skills Section */}
       <section
         id="skills"
-        className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
+        className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 scroll-mt-24"
       >
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 lg:mb-16">
