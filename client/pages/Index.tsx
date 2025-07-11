@@ -265,6 +265,15 @@ export default function Index() {
         className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
       >
         <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4">
+              Core Skills
+            </h2>
+            <p className="text-rich-gray text-base sm:text-lg">
+              Specialized expertise in data analytics and business intelligence
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {skills.map((skill, index) => (
               <div
