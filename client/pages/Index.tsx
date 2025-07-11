@@ -108,7 +108,7 @@ export default function Index() {
                 </h1>
               </div>
 
-              <p className="text-base sm:text-lg text-rich-gray max-w-lg leading-relaxed mx-auto lg:mx-0">
+              <p className="text-sm text-rich-gray max-w-lg leading-relaxed mx-auto lg:mx-0">
                 "I turn raw data into clear, actionable insights – with clean
                 dashboards and a curious mind."
               </p>
