@@ -300,11 +300,11 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* About Section */}
             <div className="space-y-6 sm:space-y-8">
-              <div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-4 sm:mb-6">
+              <div className="ml-5 pl-8">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-black mb-11">
                   About Me
                 </h2>
-                <div className="space-y-4 text-rich-gray leading-relaxed text-sm sm:text-base">
+                <div className="text-rich-gray leading-[3.125rem] text-lg">
                   <p>
                     Standing tall at 6'3", I'm a rapper-turned-self-taught data
                     analyst with a BMS in Marketing. After a year in marketing,
