@@ -307,21 +307,14 @@ export default function Index() {
                 </h2>
                 <div className="space-y-4 text-rich-gray leading-relaxed text-sm sm:text-base">
                   <p>
-                    I'm a passionate Business & Data Analyst with a focus on
-                    transforming complex data into actionable business insights.
-                    With expertise in Power BI, Excel, and market analysis, I
-                    help organizations make informed decisions.
-                  </p>
-                  <p>
-                    My approach combines technical proficiency with business
-                    acumen, ensuring that every dashboard and report I create
-                    directly contributes to strategic objectives and operational
-                    efficiency.
-                  </p>
-                  <p>
-                    When I'm not diving deep into data, I enjoy exploring the
-                    latest trends in business intelligence and sharing knowledge
-                    through writing and consulting.
+                    Standing tall at 6'3", I'm a rapper-turned-self-taught data
+                    analyst with a BMS in Marketing. After a year in marketing,
+                    sales, and design, I found my real thrill in cleaning messy
+                    data and turning it into stories businesses can trust. An AI
+                    fanboy at heart, I love learning new tools and building my
+                    own website from scratch — just to prove that curiosity can
+                    take you anywhere. Hit me up if you're ready to turn raw
+                    data into smart decisions.
                   </p>
                 </div>
               </div>
