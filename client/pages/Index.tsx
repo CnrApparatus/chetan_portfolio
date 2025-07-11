@@ -91,21 +91,50 @@ export default function Index() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8"
+        className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto w-full">
+        {/* Subtle Background Animation */}
+        <div className="absolute inset-0 opacity-[0.02]">
+          <div className="absolute top-20 left-20 w-32 h-32 rounded-full border border-rich-gray animate-pulse"></div>
+          <div
+            className="absolute top-40 right-32 w-16 h-16 rounded-full border border-rich-gray animate-bounce"
+            style={{ animationDuration: "3s" }}
+          ></div>
+          <div
+            className="absolute bottom-40 left-32 w-24 h-24 rounded-full border border-rich-gray animate-pulse"
+            style={{ animationDelay: "1s" }}
+          ></div>
+          <div
+            className="absolute bottom-20 right-20 w-20 h-20 rounded-full border border-rich-gray animate-bounce"
+            style={{ animationDuration: "4s", animationDelay: "2s" }}
+          ></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div
+              className="w-40 h-40 border border-rich-gray rounded-full animate-spin"
+              style={{ animationDuration: "20s" }}
+            ></div>
+          </div>
+          <div className="absolute top-1/3 right-1/4">
+            <div
+              className="w-6 h-6 border border-rich-gray rounded-full animate-ping"
+              style={{ animationDuration: "2s" }}
+            ></div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
-              <div className="space-y-2">
+            <div className="space-y-8 text-center lg:text-left">
+              <div className="space-y-8">
                 <p className="text-[15px] text-rich-gray uppercase tracking-wider ml-1">
-                  <h3 className="mb-[15px]">Business & Data Analyst</h3>
-                  <h1></h1>
+                  <h3>Business & Data Analyst</h3>
                 </p>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight flex flex-col gap-5">
-                  <span>Hello I'm</span>
-                  <span className="text-black font-normal">
+
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight">
+                  <div className="mb-4">Hello I'm</div>
+                  <div className="text-black font-normal">
                     Chetan Rajeshirke
-                  </span>
+                  </div>
                 </h1>
               </div>
 
@@ -138,11 +167,13 @@ export default function Index() {
             </div>
 
             <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden border-4 border-black">
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden border-4 border-black">
+                {/* Gradient Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-200"></div>
                 <img
                   src="https://cdn.builder.io/api/v1/assets/998a06dbc76e4e3a8e4610c963409912/profile-white-photoroom-ed208b?format=webp&width=800"
                   alt="Chetan Rajeshirke"
-                  className="w-full h-full object-cover"
+                  className="relative z-10 w-full h-full object-cover"
                 />
               </div>
             </div>
