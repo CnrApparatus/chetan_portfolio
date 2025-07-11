@@ -63,7 +63,7 @@ export function Navbar() {
                           : "bg-transparent text-rich-gray hover:bg-black hover:text-white hover:border-black active:bg-rich-gray active:border-rich-gray"
                   }`}
                 >
-                  <Icon size={24} />
+                  <Icon size={20} />
                 </Link>
               );
             })}
