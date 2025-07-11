@@ -30,11 +30,11 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/80 backdrop-blur-md border-b border-black/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 sm:py-6">
         <div className="flex items-center justify-between">
-          <div className="text-lg sm:text-xl font-bold text-black">Cnr.</div>
+          <div className="text-xl sm:text-2xl font-bold text-black">Cnr.</div>
 
-          <div className="flex items-center space-x-1 sm:space-x-2">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive =
