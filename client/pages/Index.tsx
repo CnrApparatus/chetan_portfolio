@@ -118,7 +118,7 @@ export default function Index() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden pt-28"
+        className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden pt-20"
       >
         {/* Subtle Background Animation */}
         <div className="absolute inset-0 opacity-[0.02]">
