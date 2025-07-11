@@ -98,12 +98,12 @@ export default function Index() {
             <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
               <div className="space-y-2">
                 <p className="text-[15px] text-rich-gray uppercase tracking-wider ml-1">
-                  <h3 className="mb-0.5">Business & Data Analyst</h3>
+                  <h3 className="mb-[15px]">Business & Data Analyst</h3>
                   <h1></h1>
                 </p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight flex flex-col gap-5">
                   <span>Hello I'm</span>
-                  <span className="text-black font-normal mt-px">
+                  <span className="text-black font-normal">
                     Chetan Rajeshirke
                   </span>
                 </h1>
