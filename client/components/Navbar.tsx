@@ -53,7 +53,7 @@ export function Navbar() {
                   onMouseLeave={() => setHoveredItem(null)}
                   onMouseDown={() => setPressedItem(item.section || item.path)}
                   onMouseUp={() => setPressedItem(null)}
-                  className={`flex items-center justify-center rounded-full text-base font-medium transition-all duration-300 w-[72px] h-[72px] border border-rich-gray ${
+                  className={`flex items-center justify-center rounded-full text-base font-medium transition-all duration-300 w-[60px] h-[60px] border-2 border-rich-gray ${
                     isActive
                       ? "bg-black text-white border-black"
                       : isPressed
