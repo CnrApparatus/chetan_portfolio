@@ -51,14 +51,14 @@ export function Navbar() {
                   onMouseLeave={() => setHoveredItem(null)}
                   onMouseDown={() => setPressedItem(item.section || item.path)}
                   onMouseUp={() => setPressedItem(null)}
-                  className={`flex items-center justify-center rounded-full text-sm font-medium transition-all duration-300 w-11 h-11 ${
+                  className={`flex items-center justify-center rounded-full text-sm font-medium transition-all duration-300 w-12 h-12 border border-rich-gray ${
                     isActive
-                      ? "bg-black text-white"
+                      ? "bg-black text-white border-black"
                       : isPressed
-                        ? "bg-rich-gray text-white scale-95"
+                        ? "bg-rich-gray text-white border-rich-gray"
                         : isHovered
-                          ? "bg-black text-white scale-105"
-                          : "bg-rich-gray text-white hover:scale-105"
+                          ? "bg-black text-white border-black"
+                          : "bg-transparent text-rich-gray hover:bg-black hover:text-white hover:border-black active:bg-rich-gray active:border-rich-gray"
                   }`}
                 >
                   <Icon size={16} />
