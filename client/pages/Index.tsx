@@ -87,7 +87,34 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-warm-white">
+    <div className="min-h-screen bg-warm-white relative overflow-hidden">
+      {/* Global subtle background pattern */}
+      <div className="fixed inset-0 pointer-events-none opacity-[0.015] z-0">
+        <div
+          className="absolute top-10 left-10 w-8 h-8 border border-rich-gray rounded-full animate-pulse"
+          style={{ animationDuration: "3s" }}
+        ></div>
+        <div
+          className="absolute top-32 right-16 w-4 h-4 border border-rich-gray rounded-full animate-pulse"
+          style={{ animationDuration: "2s", animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute bottom-32 left-16 w-6 h-6 border border-rich-gray rounded-full animate-pulse"
+          style={{ animationDuration: "4s", animationDelay: "0.5s" }}
+        ></div>
+        <div
+          className="absolute bottom-16 right-32 w-12 h-12 border border-rich-gray rounded-full animate-pulse"
+          style={{ animationDuration: "5s", animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-8 transform -translate-y-1/2 w-2 h-2 border border-rich-gray rounded-full animate-ping"
+          style={{ animationDuration: "3s" }}
+        ></div>
+        <div
+          className="absolute top-1/4 right-8 w-3 h-3 border border-rich-gray rounded-full animate-ping"
+          style={{ animationDuration: "4s", animationDelay: "1s" }}
+        ></div>
+      </div>
       {/* Hero Section */}
       <section
         id="hero"
