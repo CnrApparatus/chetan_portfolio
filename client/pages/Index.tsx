@@ -358,6 +358,17 @@ export default function Index() {
 
                 <div>
                   <label className="block text-sm font-medium text-rich-gray mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+                    placeholder="+1 (555) 123-4567"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-rich-gray mb-2">
                     Message
                   </label>
                   <textarea
