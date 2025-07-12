@@ -153,13 +153,13 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-8 text-center lg:text-left">
               <div className="space-y-8">
-                <p className="text-[15px] text-rich-gray uppercase tracking-wider ml-1 pb-[-8px]">
+                <p className="text-[15px] text-rich-gray uppercase tracking-wider ml-1 pb-[-8px] font-semibold">
                   Business & Data Analyst
                 </p>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight">
                   <div className="mb-[10px]">Hello I'm</div>
-                  <div className="text-black font-normal">
+                  <div className="text-black font-semibold">
                     Chetan Rajeshirke
                   </div>
                 </h1>
