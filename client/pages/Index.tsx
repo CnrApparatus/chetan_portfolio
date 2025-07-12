@@ -294,7 +294,7 @@ export default function Index() {
                   <div
                     className={`text-3xl sm:text-4xl font-light ${pressedSkill === index ? "text-white" : "text-rich-gray"}`}
                   >
-                    {skill.id}
+                    <b>{skill.id}</b>
                   </div>
                   <h3
                     className={`text-lg sm:text-xl font-medium leading-tight ${pressedSkill === index ? "text-white" : "text-black"}`}
