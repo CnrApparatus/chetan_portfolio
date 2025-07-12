@@ -177,18 +177,36 @@ export default function Index() {
                 </button>
 
                 <div className="flex items-center space-x-4">
-                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                  <a
+                    href="https://github.com/CnrApparatus"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200"
+                  >
                     <Github size={20} />
-                  </button>
-                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/chetan-rajeshirke-3b129b1bb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200"
+                  >
                     <Linkedin size={20} />
-                  </button>
-                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                  </a>
+                  <a
+                    href="mailto:chetan.rajeshirke.05@gmail.com"
+                    className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200"
+                  >
                     <Mail size={20} />
-                  </button>
-                  <button className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200">
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/chetan-rajeshirke-3b129b1bb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-[10px] sm:p-[13px] rounded-full border-2 border-rich-gray hover:bg-black hover:text-white active:bg-rich-gray transition-colors duration-200"
+                  >
                     <ExternalLink size={20} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
