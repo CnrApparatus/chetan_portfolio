@@ -158,7 +158,7 @@ export default function Index() {
                 </p>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight">
-                  <div className="mb-4">Hello I'm</div>
+                  <div className="mb-8">Hello I'm</div>
                   <div className="text-black font-normal">
                     Chetan Rajeshirke
                   </div>
