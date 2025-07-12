@@ -200,7 +200,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/assets/998a06dbc76e4e3a8e4610c963409912/profile-white-photoroom-ed208b?format=webp&width=800"
                   alt="Chetan Rajeshirke"
-                  className="relative z-10 w-full h-full object-cover"
+                  className="relative z-10 w-full h-full object-cover bg-white"
                 />
               </div>
             </div>
