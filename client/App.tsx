@@ -31,6 +31,8 @@ const App = () => (
             path="/skills/data-visualization"
             element={<DataVisualization />}
           />
+          <Route path="/skills/excel-sheets" element={<ExcelSheets />} />
+          <Route path="/skills/market-analysis" element={<MarketAnalysis />} />
           {/* Placeholder routes for navigation */}
           <Route
             path="/projects"
