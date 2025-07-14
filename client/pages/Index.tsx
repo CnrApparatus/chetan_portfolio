@@ -171,10 +171,16 @@ export default function Index() {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-                <button className="flex items-center space-x-2 bg-black text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform duration-200 text-sm sm:text-base">
+                <a
+                  href="https://cdn.builder.io/api/v1/image/assets%2F998a06dbc76e4e3a8e4610c963409912%2F1f48b51b9e8d4ecbb6e1d5871247ab54?format=webp&width=800"
+                  download="Chetan_Rajeshirke_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 bg-black text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform duration-200 text-sm sm:text-base"
+                >
                   <Download size={16} />
                   <span>Download CV</span>
-                </button>
+                </a>
 
                 <div className="flex items-center space-x-4">
                   <a
