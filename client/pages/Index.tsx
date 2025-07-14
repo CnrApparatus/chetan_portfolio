@@ -4,7 +4,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  ExternalLink,
   TrendingUp,
   BarChart3,
   PieChart,
