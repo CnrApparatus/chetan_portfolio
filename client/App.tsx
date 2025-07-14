@@ -23,6 +23,12 @@ const App = () => (
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
+          {/* Skill Landing Pages */}
+          <Route path="/skills/power-bi" element={<PowerBI />} />
+          <Route
+            path="/skills/data-visualization"
+            element={<DataVisualization />}
+          />
           {/* Placeholder routes for navigation */}
           <Route
             path="/projects"
