@@ -294,40 +294,58 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-            {skills.map((skill, index) => (
-              <div
-                key={skill.id}
-                className={`relative p-6 sm:p-8 transition-all duration-300 cursor-pointer rounded-2xl ${
-                  pressedSkill === index
-                    ? "bg-black text-white scale-95"
-                    : hoveredSkill === index
-                      ? "bg-gray-50 scale-105"
-                      : "bg-white hover:bg-gray-50"
-                }`}
-                onMouseEnter={() => setHoveredSkill(index)}
-                onMouseLeave={() => setHoveredSkill(null)}
-                onMouseDown={() => setPressedSkill(index)}
-                onMouseUp={() => setPressedSkill(null)}
-              >
-                <div className="space-y-4">
-                  <div
-                    className={`text-3xl sm:text-4xl font-light ${pressedSkill === index ? "text-white" : "text-rich-gray"}`}
-                  >
-                    <b>{skill.id}</b>
+            {skills.map((skill, index) => {
+              const SkillComponent = index < 2 ? Link : "div";
+              const skillPath =
+                index === 0
+                  ? "/skills/power-bi"
+                  : index === 1
+                    ? "/skills/data-visualization"
+                    : "#";
+
+              return (
+                <SkillComponent
+                  key={skill.id}
+                  to={index < 2 ? skillPath : undefined}
+                  className={`relative p-6 sm:p-8 transition-all duration-300 cursor-pointer rounded-2xl block ${
+                    pressedSkill === index
+                      ? "bg-black text-white scale-95"
+                      : hoveredSkill === index
+                        ? "bg-gray-50 scale-105"
+                        : "bg-white hover:bg-gray-50"
+                  }`}
+                  onMouseEnter={() => setHoveredSkill(index)}
+                  onMouseLeave={() => setHoveredSkill(null)}
+                  onMouseDown={() => setPressedSkill(index)}
+                  onMouseUp={() => setPressedSkill(null)}
+                >
+                  <div className="space-y-4">
+                    <div
+                      className={`text-3xl sm:text-4xl font-light ${pressedSkill === index ? "text-white" : "text-rich-gray"}`}
+                    >
+                      <b>{skill.id}</b>
+                    </div>
+                    <h3
+                      className={`text-lg sm:text-xl font-medium leading-tight ${pressedSkill === index ? "text-white" : "text-black"}`}
+                    >
+                      {skill.title}
+                    </h3>
+                    <p
+                      className={`text-sm leading-relaxed ${pressedSkill === index ? "text-gray-200" : "text-rich-gray"}`}
+                    >
+                      {skill.description}
+                    </p>
+                    {index < 2 && (
+                      <div
+                        className={`text-xs font-medium ${pressedSkill === index ? "text-gray-300" : "text-rich-gray"}`}
+                      >
+                        Click to explore →
+                      </div>
+                    )}
                   </div>
-                  <h3
-                    className={`text-lg sm:text-xl font-medium leading-tight ${pressedSkill === index ? "text-white" : "text-black"}`}
-                  >
-                    {skill.title}
-                  </h3>
-                  <p
-                    className={`text-sm leading-relaxed ${pressedSkill === index ? "text-gray-200" : "text-rich-gray"}`}
-                  >
-                    {skill.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+                </SkillComponent>
+              );
+            })}
           </div>
         </div>
       </section>
