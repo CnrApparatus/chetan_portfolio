@@ -216,7 +216,7 @@ export default function Index() {
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-200"></div>
                 <img
-                  src="https://cdn.builder.io/api/v1/assets/998a06dbc76e4e3a8e4610c963409912/profile-white-photoroom-ed208b?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F998a06dbc76e4e3a8e4610c963409912%2F734dd65c69074a878e21e0504f4d00a6"
                   alt="Chetan Rajeshirke"
                   className="relative z-10 w-full h-full object-cover bg-white"
                 />
