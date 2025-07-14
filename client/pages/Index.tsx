@@ -159,9 +159,17 @@ export default function Index() {
                 </p>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-rich-gray leading-tight">
-                  <div className="mb-[10px]">Hello I'm</div>
-                  <div className="text-black font-semibold">
-                    Chetan Rajeshirke
+                  <div
+                    className="mb-[10px]"
+                    style={{ textShadow: "3px 3px 5px rgba(165, 165, 165, 1)" }}
+                  >
+                    Hello I'm
+                  </div>
+                  <div
+                    className="text-black"
+                    style={{ textShadow: "3px 3px 5px rgba(165, 165, 165, 1)" }}
+                  >
+                    <b>Chetan Rajeshirke</b>
                   </div>
                 </h1>
               </div>
