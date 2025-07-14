@@ -10,6 +10,7 @@ import {
   PieChart,
   LineChart,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
