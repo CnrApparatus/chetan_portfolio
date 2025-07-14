@@ -11,6 +11,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PowerBI from "./pages/PowerBI";
 import DataVisualization from "./pages/DataVisualization";
+import ExcelSheets from "./pages/ExcelSheets";
+import MarketAnalysis from "./pages/MarketAnalysis";
 
 const queryClient = new QueryClient();
 
