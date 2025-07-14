@@ -173,7 +173,7 @@ export default function Index() {
 
               <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
                 <a
-                  href="https://cdn.builder.io/api/v1/image/assets%2F998a06dbc76e4e3a8e4610c963409912%2F1f48b51b9e8d4ecbb6e1d5871247ab54?format=webp&width=800"
+                  href="https://cdn.builder.io/o/assets%2F998a06dbc76e4e3a8e4610c963409912%2F22b6084c55684449982d4259b541e481?alt=media&token=0a226f55-e6e2-4c59-b34d-21743385827f&apiKey=998a06dbc76e4e3a8e4610c963409912"
                   download="Chetan_Rajeshirke_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
