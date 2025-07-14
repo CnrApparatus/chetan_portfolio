@@ -28,11 +28,11 @@ export default function PowerBI() {
         <div className="max-w-4xl mx-auto">
           {/* Back Navigation */}
           <Link
-            to="/"
+            to="/#skills"
             className="inline-flex items-center space-x-2 text-rich-gray hover:text-black transition-colors duration-200 mb-12"
           >
             <ArrowLeft size={20} />
-            <span>Back to Portfolio</span>
+            <span>Back to Skills</span>
           </Link>
 
           {/* Header */}
