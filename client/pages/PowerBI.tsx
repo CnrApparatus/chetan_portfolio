@@ -1,7 +1,11 @@
 import { ArrowLeft, ExternalLink, Download } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function PowerBI() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-warm-white relative overflow-hidden">
       {/* Background Animation */}
