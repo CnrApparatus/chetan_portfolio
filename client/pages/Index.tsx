@@ -295,18 +295,17 @@ export default function Index() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {skills.map((skill, index) => {
-              const SkillComponent = index < 2 ? Link : "div";
-              const skillPath =
-                index === 0
-                  ? "/skills/power-bi"
-                  : index === 1
-                    ? "/skills/data-visualization"
-                    : "#";
+              const skillPaths = [
+                "/skills/power-bi",
+                "/skills/data-visualization",
+                "/skills/excel-sheets",
+                "/skills/market-analysis",
+              ];
 
               return (
-                <SkillComponent
+                <Link
                   key={skill.id}
-                  to={index < 2 ? skillPath : undefined}
+                  to={skillPaths[index]}
                   className={`relative p-6 sm:p-8 transition-all duration-300 cursor-pointer rounded-2xl block ${
                     pressedSkill === index
                       ? "bg-black text-white scale-95"
@@ -335,15 +334,13 @@ export default function Index() {
                     >
                       {skill.description}
                     </p>
-                    {index < 2 && (
-                      <div
-                        className={`text-xs font-medium ${pressedSkill === index ? "text-gray-300" : "text-rich-gray"}`}
-                      >
-                        Click to explore →
-                      </div>
-                    )}
+                    <div
+                      className={`text-xs font-medium ${pressedSkill === index ? "text-gray-300" : "text-rich-gray"}`}
+                    >
+                      Click to explore →
+                    </div>
                   </div>
-                </SkillComponent>
+                </Link>
               );
             })}
           </div>
