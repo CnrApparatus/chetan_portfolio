@@ -9,6 +9,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import PowerBI from "./pages/PowerBI";
+import DataVisualization from "./pages/DataVisualization";
 
 const queryClient = new QueryClient();
 
