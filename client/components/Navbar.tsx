@@ -1,6 +1,24 @@
-import { Home, FolderOpen, Briefcase, FileText, Mail } from "lucide-react";
+import { Home, FolderOpen, Briefcase, FileText } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+
+// Custom Avatar Icon Component
+const AvatarIcon = ({ size = 20 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="8" r="3" />
+    <path d="M6.168 18.849A6 6 0 0 1 12 14a6 6 0 0 1 5.832 4.849" />
+  </svg>
+);
 
 export function Navbar() {
   const location = useLocation();
@@ -12,7 +30,7 @@ export function Navbar() {
     { icon: FolderOpen, label: "PROJECTS", path: "/", section: "projects" },
     { icon: Briefcase, label: "SERVICES", path: "/", section: "skills" },
     { icon: FileText, label: "BLOG", path: "/", section: "blog" },
-    { icon: Mail, label: "CONTACT", path: "/", section: "contact" },
+    { icon: AvatarIcon, label: "CONTACT", path: "/", section: "contact" },
   ];
 
   const scrollToSection = (sectionId: string) => {
