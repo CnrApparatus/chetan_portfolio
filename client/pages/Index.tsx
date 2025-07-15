@@ -543,6 +543,5 @@ export default function Index() {
           </button>
         </form>
       </div> {/* End Contact Section */}
-    </div> {/* End Grid */}
   </div> {/* End Max Width Container */}
 </section> {/* End Section */}
