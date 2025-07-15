@@ -16,6 +16,27 @@ export default function Index() {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
   const [pressedSkill, setPressedSkill] = useState<number | null>(null);
 
+  // Handle hash navigation on page load
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          const navbar = document.querySelector("nav");
+          const navbarHeight = navbar ? navbar.offsetHeight : 0;
+          const offset = navbarHeight + 40;
+          const elementPosition = element.offsetTop - offset;
+
+          window.scrollTo({
+            top: elementPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    }
+  }, []);
+
   const skills = [
     {
       id: "01",
