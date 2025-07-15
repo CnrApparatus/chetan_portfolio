@@ -435,13 +435,14 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Contact & About Section */}
+{/* Contact & About Section */}
 <section
   id="contact"
   className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-24"
 >
   <div className="max-w-7xl mx-auto">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      
       {/* About Section */}
       <div className="space-y-6 sm:space-y-8">
         <div className="ml-5 pl-8">
@@ -468,81 +469,80 @@ export default function Index() {
         <h3 className="text-xl sm:text-2xl font-medium text-black mb-4 sm:mb-6">
           Let's Connect
         </h3>
- <form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  action="/thank-you"
-  className="space-y-4 sm:space-y-6"
->
-  {/* Hidden input for Netlify detection */}
-  <input type="hidden" name="form-name" value="contact" />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/thank-you"
+          className="space-y-4 sm:space-y-6"
+        >
+          {/* Hidden input for Netlify detection */}
+          <input type="hidden" name="form-name" value="contact" />
 
-  {/* Honeypot field */}
-  <input type="hidden" name="bot-field" />
+          {/* Honeypot field */}
+          <input type="hidden" name="bot-field" />
 
-  <div>
-    <label className="block text-sm font-medium text-rich-gray mb-2">
-      Name
-    </label>
-    <input
-      type="text"
-      name="name"
-      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
-      placeholder="Your name"
-      required
-    />
-  </div>
+          <div>
+            <label className="block text-sm font-medium text-rich-gray mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+              placeholder="Your name"
+              required
+            />
+          </div>
 
-  <div>
-    <label className="block text-sm font-medium text-rich-gray mb-2">
-      Email
-    </label>
-    <input
-      type="email"
-      name="email"
-      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
-      placeholder="your@email.com"
-      required
-    />
-  </div>
+          <div>
+            <label className="block text-sm font-medium text-rich-gray mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
 
-  <div>
-    <label className="block text-sm font-medium text-rich-gray mb-2">
-      Phone Number
-    </label>
-    <input
-      type="tel"
-      name="phone"
-      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
-      placeholder="+1 (555) 123-4567"
-      required
-    />
-  </div>
+          <div>
+            <label className="block text-sm font-medium text-rich-gray mb-2">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+              placeholder="+1 (555) 123-4567"
+              required
+            />
+          </div>
 
-  <div>
-    <label className="block text-sm font-medium text-rich-gray mb-2">
-      Message
-    </label>
-    <textarea
-      name="message"
-      rows={4}
-      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 resize-none text-sm sm:text-base"
-      placeholder="Tell me about your project..."
-      required
-    />
-  </div>
+          <div>
+            <label className="block text-sm font-medium text-rich-gray mb-2">
+              Message
+            </label>
+            <textarea
+              name="message"
+              rows={4}
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 resize-none text-sm sm:text-base"
+              placeholder="Tell me about your project..."
+              required
+            />
+          </div>
 
-  <button
-    type="submit"
-    className="w-full bg-black text-white py-2 sm:py-3 rounded-lg hover:bg-rich-gray transition-colors duration-200 text-sm sm:text-base"
-  >
-    Send Message
-  </button>
-</form>
-        
-      </div>
-    </div>
-  </div>
-</section>
+          <button
+            type="submit"
+            className="w-full bg-black text-white py-2 sm:py-3 rounded-lg hover:bg-rich-gray transition-colors duration-200 text-sm sm:text-base"
+          >
+            Send Message
+          </button>
+        </form>
+      </div> {/* End Contact Section */}
+    </div> {/* End Grid */}
+  </div> {/* End Max Width Container */}
+</section> {/* End Section */}
