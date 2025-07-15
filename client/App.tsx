@@ -33,47 +33,6 @@ const App = () => (
           />
           <Route path="/skills/excel-sheets" element={<ExcelSheets />} />
           <Route path="/skills/market-analysis" element={<MarketAnalysis />} />
-          {/* Placeholder routes for navigation */}
-          <Route
-            path="/projects"
-            element={
-              <div className="pt-32 px-8 text-center">
-                <h1 className="text-4xl font-light text-black">
-                  Projects page coming soon...
-                </h1>
-              </div>
-            }
-          />
-          <Route
-            path="/services"
-            element={
-              <div className="pt-32 px-8 text-center">
-                <h1 className="text-4xl font-light text-black">
-                  Services page coming soon...
-                </h1>
-              </div>
-            }
-          />
-          <Route
-            path="/blog"
-            element={
-              <div className="pt-32 px-8 text-center">
-                <h1 className="text-4xl font-light text-black">
-                  Blog page coming soon...
-                </h1>
-              </div>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <div className="pt-32 px-8 text-center">
-                <h1 className="text-4xl font-light text-black">
-                  Contact page coming soon...
-                </h1>
-              </div>
-            }
-          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
