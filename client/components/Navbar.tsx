@@ -81,9 +81,8 @@ export function Navbar() {
               const isPressed = pressedItem === (item.section || item.path);
 
               return (
-                <Link
+                <button
                   key={item.section || item.path}
-                  to={item.path}
                   onClick={() => handleClick(item)}
                   onMouseEnter={() => setHoveredItem(item.section || item.path)}
                   onMouseLeave={() => setHoveredItem(null)}
@@ -100,7 +99,7 @@ export function Navbar() {
                   }`}
                 >
                   <Icon size={20} />
-                </Link>
+                </button>
               );
             })}
           </div>
