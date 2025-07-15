@@ -50,8 +50,14 @@ export function Navbar() {
   };
 
   const handleClick = (item: any) => {
-    if (location.pathname === "/" && item.section) {
-      scrollToSection(item.section);
+    if (location.pathname === "/") {
+      // If already on homepage, scroll to section
+      if (item.section) {
+        scrollToSection(item.section);
+      }
+    } else {
+      // If on different page, navigate to homepage with hash
+      window.location.href = `/#${item.section}`;
     }
   };
 
