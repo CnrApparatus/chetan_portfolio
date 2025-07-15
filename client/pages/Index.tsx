@@ -468,76 +468,81 @@ export default function Index() {
         <h3 className="text-xl sm:text-2xl font-medium text-black mb-4 sm:mb-6">
           Let's Connect
         </h3>
+        
+  <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  action="/thank-you"
+  className="space-y-4 sm:space-y-6"
+>
+  {/* Hidden input for Netlify detection */}
+  <input type="hidden" name="form-name" value="contact" />
 
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/thank-you"
-          className="space-y-4 sm:space-y-6"
-        >
-          {/* Hidden input for Netlify */}
-          <input type="hidden" name="form-name" value="contact" />
+  {/* Honeypot field */}
+  <input type="hidden" name="bot-field" />
 
-          <div>
-            <label className="block text-sm font-medium text-rich-gray mb-2">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
-              placeholder="Your name"
-              required
-            />
-          </div>
+  <div>
+    <label className="block text-sm font-medium text-rich-gray mb-2">
+      Name
+    </label>
+    <input
+      type="text"
+      name="name"
+      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+      placeholder="Your name"
+      required
+    />
+  </div>
 
-          <div>
-            <label className="block text-sm font-medium text-rich-gray mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
-              placeholder="your@email.com"
-              required
-            />
-          </div>
+  <div>
+    <label className="block text-sm font-medium text-rich-gray mb-2">
+      Email
+    </label>
+    <input
+      type="email"
+      name="email"
+      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+      placeholder="your@email.com"
+      required
+    />
+  </div>
 
-          <div>
-            <label className="block text-sm font-medium text-rich-gray mb-2">
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              name="phone"
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
-              placeholder="+1 (555) 123-4567"
-              required
-            />
-          </div>
+  <div>
+    <label className="block text-sm font-medium text-rich-gray mb-2">
+      Phone Number
+    </label>
+    <input
+      type="tel"
+      name="phone"
+      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 text-sm sm:text-base"
+      placeholder="+1 (555) 123-4567"
+      required
+    />
+  </div>
 
-          <div>
-            <label className="block text-sm font-medium text-rich-gray mb-2">
-              Message
-            </label>
-            <textarea
-              name="message"
-              rows={4}
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 resize-none text-sm sm:text-base"
-              placeholder="Tell me about your project..."
-              required
-            />
-          </div>
+  <div>
+    <label className="block text-sm font-medium text-rich-gray mb-2">
+      Message
+    </label>
+    <textarea
+      name="message"
+      rows={4}
+      className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black transition-colors duration-200 resize-none text-sm sm:text-base"
+      placeholder="Tell me about your project..."
+      required
+    />
+  </div>
 
-          <button
-            type="submit"
-            className="w-full bg-black text-white py-2 sm:py-3 rounded-lg hover:bg-rich-gray transition-colors duration-200 text-sm sm:text-base"
-          >
-            Send Message
-          </button>
-        </form>
+  <button
+    type="submit"
+    className="w-full bg-black text-white py-2 sm:py-3 rounded-lg hover:bg-rich-gray transition-colors duration-200 text-sm sm:text-base"
+  >
+    Send Message
+  </button>
+</form>
+
       </div>
     </div>
   </div>
