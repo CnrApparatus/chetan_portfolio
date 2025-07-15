@@ -468,8 +468,7 @@ export default function Index() {
         <h3 className="text-xl sm:text-2xl font-medium text-black mb-4 sm:mb-6">
           Let's Connect
         </h3>
-        
-  <form
+ <form
   name="contact"
   method="POST"
   data-netlify="true"
@@ -542,7 +541,7 @@ export default function Index() {
     Send Message
   </button>
 </form>
-
+        
       </div>
     </div>
   </div>
